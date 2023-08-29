@@ -60,11 +60,11 @@ export class DetailsComponent {
     this.housingLocation = this.housingService.getHousingLocationById(housingLocationId);
   }
 
-  submitApplication(){
+  submitApplication() {
     this.housingService.submitApplication(
       this.applyForm.value.firstName ?? '',
       this.applyForm.value.lastName ?? '',
-      this.applyForm.value.email?? ''
+      this.applyForm.value.email ?? ''
     );
   }
 }
